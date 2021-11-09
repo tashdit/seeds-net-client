@@ -1,0 +1,45 @@
+.header{
+    z-index: 997;
+    transition: all 0.5s;
+    background: #CEE5D0;
+    top: 20px;
+    position: sticky;
+}
+
+.logo {
+    overflow: hidden;
+    padding: 16px 30px 12px 30px;
+    background: #009970;
+}
+
+.header .logo h1 {
+    font-size: 26px;
+    padding: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .header .logo h1 a, #header .logo h1 a:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .register{
+    background: #009970;
+    padding: 10px 25px;
+    margin-left: 30px;
+    margin-right: 15px;
+    border-radius: 50px;
+    color: #fff;
+  }
+
+  .register:hover{
+    color: #fff;
+    background: #00b383;
+  }
+
+.nav-link{
+    color: #112031;
+    font-weight: 600;
+}
