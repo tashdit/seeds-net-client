@@ -18,7 +18,7 @@ const Navigation = () => {
                         <Nav.Link as={Link} to="/login" className="nav-link">Log In</Nav.Link>
                         <Navbar.Text className="userName">
                         </Navbar.Text>
-                        <Nav.Link as={Link} to="/registar" className="nav-link register">Registar</Nav.Link>
+                        <Nav.Link as={Link} to="/register" className="nav-link register">Registar</Nav.Link>
                     </Navbar.Collapse>
                 </Container>
             </Navbar>
