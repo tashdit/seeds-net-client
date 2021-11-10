@@ -58,11 +58,11 @@ const Footer = () => {
 
                 <div className="me-md-auto text-center text-md-start">
                     <div className="copyright">
-                        &copy; Copyright <strong><span>Bethany</span></strong>. All Rights Reserved
+                        &copy; Copyright <strong><span>Seeds Net</span></strong>. All Rights Reserved
               </div>
                     <div className="credits">
 
-                        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                        Designed by <a href="https://bootstrapmade.com/">Tashdit Diganta</a>
                     </div>
                 </div>
                 <div className="social-links text-center text-md-right pt-3 pt-md-0">

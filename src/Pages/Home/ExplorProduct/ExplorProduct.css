@@ -1,0 +1,35 @@
+ 
+ .product-item{
+  margin-bottom: 30px;
+
+}
+
+
+.product-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+
+}
+
+.product-wrap img {
+    width: 415px;
+    height: 320px;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio-info{
+  background: aliceblue;
+  background: aliceblue;
+  padding-left: 14px 7px;
+  padding: 22px 15px;
+}
+
+button {
+  text-align: center;
+  background: #009970;
+  color: brown;
+  padding: 4px 40px;
+  border-radius: 19px;
+}
