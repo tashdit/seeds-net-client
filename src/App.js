@@ -10,6 +10,7 @@ import Register from './Pages/Login/Register/Register';
 import ExplorProducts from './Pages/Home/ExplorProducts/ExplorProducts';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
+import Booking from './Pages/Home/Booking/Booking';
 
 
 function App() {
@@ -20,8 +21,11 @@ function App() {
           <Route exact path="/">
             <Home></Home>
           </Route>
-          <PrivateRoute path="/about">
+          <Route path="/about">
             <AboutUs></AboutUs>
+          </Route>
+          <PrivateRoute path="/booking/:bookingId">
+            <Booking></Booking>
           </PrivateRoute>
           <Route path="/allProducts">
             <ExplorProducts></ExplorProducts>

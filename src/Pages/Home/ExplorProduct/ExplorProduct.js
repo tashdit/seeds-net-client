@@ -1,7 +1,8 @@
 import React from 'react';
 import "./ExplorProduct.css"
+import { Link } from 'react-router-dom';
 const ExplorProduct = ({ products }) => {
-    const { picture, name, price, descrition } = products
+    const { picture, name, price, descrition, _id } = products
     return (
         <div className="col-lg-4 col-md-6 product-item">
             <div className="product-wrap">
@@ -10,7 +11,9 @@ const ExplorProduct = ({ products }) => {
                     <h4><span>Name:</span> {name}</h4>
                     <h4><span>Price</span> {price}</h4>
                     <p><span>Details</span> {descrition}</p>
-                    <button>Purchess Now</button>
+                    <Link to={`/booking/${_id}`}>
+                        <button>Purchess Now</button>
+                    </Link>
                 </div>
             </div>
         </div>

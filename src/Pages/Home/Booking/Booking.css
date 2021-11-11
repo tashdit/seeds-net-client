@@ -1,0 +1,23 @@
+.product-wrap {
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  .booking-item{
+    width: 70%;
+  }
+
+ .product-wrap img {
+      width: 415px;
+      height: 320px;
+    transition: all ease-in-out 0.3s;
+  }
+
+  .portfolio-info{
+    background: aliceblue;
+    background: aliceblue;
+    padding-left: 14px 7px;
+    padding: 22px 15px;
+  }

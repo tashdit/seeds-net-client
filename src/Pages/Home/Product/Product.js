@@ -1,7 +1,8 @@
 import React from 'react';
 import "./Product.css"
+import { Link } from 'react-router-dom';
 const Product = ({ seed }) => {
-    const { name, picture, descrition, price, } = seed
+    const { name, picture, descrition, price, _id } = seed
     return (
         <>
             <div className="col-lg-4 col-md-6 product-item">
@@ -11,7 +12,9 @@ const Product = ({ seed }) => {
                         <h4><span>Name:</span> {name}</h4>
                         <h4><span>Price</span> {price}</h4>
                         <p><span>Details</span> {descrition}</p>
-                        <button>Purchess Now</button>
+                        <Link to={`/booking/${_id}`}>
+                            <button>Purchess Now</button>
+                        </Link>
                     </div>
                 </div>
             </div>
