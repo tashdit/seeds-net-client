@@ -46,12 +46,11 @@ const useFirebase = () => {
     const loginUser = (email, password, location, history) => {
         setIsLoading(true)
         signInWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
+            .then(() => {
                 const destination = location.state.from || '/'
                 history.replace(destination);
                 // Signed in 
                 setAuthError('')
-                const user = userCredential.user;
                 // ...
             })
             .catch((error) => {

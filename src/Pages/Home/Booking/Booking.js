@@ -4,6 +4,7 @@ import { useForm } from "react-hook-form";
 import { useParams } from "react-router-dom";
 import Navigation from '../../Shared/Navigation/Navigation';
 import "./Booking.css"
+import useAuth from '../../../hooks/useAuth';
 
 
 
@@ -11,7 +12,23 @@ import "./Booking.css"
 const Booking = () => {
     const { bookingId } = useParams();
     const [booking, setBooking] = useState({});
+    const { user } = useAuth()
 
+
+
+
+    const handleOrderSubmit = (data) => {
+        data.email = user.email;
+        data.status = "pending";
+        fetch("http://localhost:5000/addOrders", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((result) => console.log(result));
+        console.log(data);
+    }
 
     useEffect(() => {
         fetch(`http://localhost:5000/singleProducts/${bookingId}`)
@@ -25,7 +42,6 @@ const Booking = () => {
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
     } = useForm();
     return (
@@ -46,22 +62,22 @@ const Booking = () => {
                     </div>
                     <div className="col-md-6">
                         <h1>booking Form</h1>
-                        <form onSubmit=''>
+                        <form onSubmit={handleSubmit(handleOrderSubmit)}>
                             <input
-                                {...register("name")}
+                                {...register("name", { required: true })}
                                 defaultValue={booking.name}
                                 className="p-2 m-2 w-100"
                             />
                             <br />
                             <input
-                                {...register("date")}
+                                {...register("date", { required: true })}
                                 // placeholder="Name"
                                 type="date"
                                 className="p-2 m-2 w-100"
                             />
                             <br />
                             <input
-                                {...register("comments")}
+                                {...register("comments", { required: true })}
                                 placeholder="comments"
                                 className="p-2 m-2"
                                 className="p-2 m-2 w-100"
@@ -82,9 +98,6 @@ const Booking = () => {
                                 className="p-2 m-2 w-100"
                             />
                             <br />
-
-                            {errors.exampleRequired && <span>This field is required</span>}
-
                             <input
                                 style={{ background: '#009970' }}
                                 type="submit"

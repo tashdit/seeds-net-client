@@ -11,6 +11,7 @@ import ExplorProducts from './Pages/Home/ExplorProducts/ExplorProducts';
 import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Home/Booking/Booking';
+import DashBorad from './Pages/DashBoard/DashBorad';
 
 
 function App() {
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/contactUs">
             <ContactUs></ContactUs>
+          </Route>
+          <Route path="/dashBoard">
+            <DashBorad></DashBorad>
           </Route>
           <Route path="/login">
             <Login></Login>
