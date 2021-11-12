@@ -13,6 +13,7 @@ import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Home/Booking/Booking';
 import DashBorad from './Pages/DashBoard/DashBorad';
 import Admin from './Pages/Admin/Admin';
+import OurServices from './Pages/OurServices/OurServices';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           </PrivateRoute>
           <Route path="/allProducts">
             <ExplorProducts></ExplorProducts>
+          </Route>
+          <Route path="/services">
+            <OurServices></OurServices>
           </Route>
           <Route path="/contactUs">
             <ContactUs></ContactUs>

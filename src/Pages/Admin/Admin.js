@@ -20,29 +20,29 @@ const Admin = () => {
                 <div className="row">
                     <div className="col-md-3 ">
                         <div className="dashboard">
-                            <h5>Dashboard</h5>
+                            <h5>Admin DashBoard</h5>
                             <Link to={`${url}/AllOrders`}>
-                                <li className="dashboard-menu mt-5">Manage All Orders</li>
+                                <li className="dashboard-menu mt-4">Manage All Orders</li>
                             </Link>
 
                             <Link to={`${url}/AddProduct`}>
-                                <li className="dashboard-menu mt-5">Add A Product</li>
+                                <li className="dashboard-menu mt-3">Add A Product</li>
                             </Link>
 
                             <Link to={`${url}/MakeAdmin`}>
-                                <li className="dashboard-menu mt-5">Make Admin</li>
+                                <li className="dashboard-menu mt-3">Make Admin</li>
                             </Link>
                             <Link to={`${url}/ManageProducts`}>
-                                <li className="dashboard-menu mt-5">Manage Products</li>
+                                <li className="dashboard-menu mt-3">Manage Products</li>
                             </Link>
                             <Link to={`${url}/logOut`}>
-                                <li className="dashboard-menu mt-5">Log Out</li>
+                                <li className="dashboard-menu mt-3">Log Out</li>
                             </Link>
                         </div>
                     </div>
                     <div className="col-md-9">
                         <Switch>
-                            <Route exact path={`${path}/AllOrders`}>
+                            <Route exact path={path}>
                                 <ManageAllOrders></ManageAllOrders>
                             </Route>
                             <Route exact path={`${path}/AddProduct`}>

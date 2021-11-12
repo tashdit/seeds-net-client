@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-
+import "./Review.css"
 const Review = () => {
 
     const [review, setReview] = useState([])
@@ -10,15 +10,14 @@ const Review = () => {
             .then(data => setReview(data))
     }, [])
 
-    console.log(review);
     return (
         <>
             <div className="container">
-                <div className="section-title" >
-                    <h2>Review</h2>
+                <div className="section-title mt-5" >
+                    <h2>Customer Review</h2>
                 </div>
                 <div className="review-text">
-                    {review?.map(reviews => { <p>{reviews?.comments}</p> })}
+                    {review.map(item => <p key={item?._id} >{item.comments}</p>)}
                 </div>
             </div>
         </>

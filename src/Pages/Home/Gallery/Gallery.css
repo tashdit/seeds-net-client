@@ -44,6 +44,10 @@ section {
     margin-bottom: 30px;
   }
 
+  .bg{
+    background-color: #f6f6f7;
+  }
+
   .portfolio #portfolio-flters li:last-child {
     margin-right: 0;
   }

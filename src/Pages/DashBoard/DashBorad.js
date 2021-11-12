@@ -1,4 +1,5 @@
 import React from 'react';
+import "./DashBoard.css"
 import { Link, useRouteMatch, Switch, Route } from 'react-router-dom';
 import MyOrders from './MyOrders/MyOrders';
 import Review from './Review/Review';
@@ -20,20 +21,20 @@ const DashBorad = () => {
                 <div className="row">
                     <div className="col-md-3 ">
                         <div className="dashboard">
-                            <h5>Dashboard</h5>
+                            <h5>User Dashboard</h5>
                             <Link to={`${url}`}>
-                                <li className="dashboard-menu mt-5">My Orders</li>
+                                <li className="dashboard-menu mt-4">My Orders</li>
                             </Link>
 
                             <Link to={`${url}/review`}>
-                                <li className="dashboard-menu mt-5">Review</li>
+                                <li className="dashboard-menu mt-3">Review</li>
                             </Link>
 
                             <Link to={`${url}/Pay`}>
-                                <li className="dashboard-menu mt-5">Pay</li>
+                                <li className="dashboard-menu mt-3">Pay</li>
                             </Link>
                             <Link to={`${url}/logOut`}>
-                                <li className="dashboard-menu mt-5">Log Out</li>
+                                <li className="dashboard-menu mt-3 pb-2">Log Out</li>
                             </Link>
                         </div>
                     </div>
