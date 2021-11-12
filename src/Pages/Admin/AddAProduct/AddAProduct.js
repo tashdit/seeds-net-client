@@ -1,31 +1,22 @@
 import React from 'react';
 import "./AddAProduc.css"
 import { useForm } from 'react-hook-form';
-import axios from 'axios';
+
 
 
 const AddAProduct = () => {
 
-    const { register, handleSubmit, reset
+    const { register, handleSubmit,
     } = useForm();
-    // const onSubmit = data => {
-    //     console.log(data);
-    //     axios.post('https://shielded-tundra-20828.herokuapp.com/seeds', data)
-    //         .then(res => {
-    //             console.log(res);
-    //         })
-    // }
+
 
     const onSubmit = (data) => {
-        fetch("http://localhost:5000/seeds", {
+        fetch("https://shielded-tundra-20828.herokuapp.com/seeds", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
         })
-            .then((res) => res.json())
-            .then((result) => console.log(result));
 
-        console.log(data);
     };
 
 
@@ -36,9 +27,9 @@ const AddAProduct = () => {
                 <div className="add-services">
                     <form onSubmit={handleSubmit(onSubmit)}>
                         <input {...register("name", { required: true, maxLength: 20 })} placeholder="Name" />
-                        <textarea {...register("description")} placeholder="Description" />
+                        <textarea {...register("descrition")} placeholder="Description" />
                         < input type="number" {...register("price")} placeholder="Price" />
-                        < input {...register("img")} placeholder="img" />
+                        < input {...register("picture")} placeholder="img" />
                         <input type="submit" />
                     </form>
                 </div>

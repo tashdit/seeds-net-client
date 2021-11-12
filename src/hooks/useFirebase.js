@@ -19,19 +19,34 @@ const useFirebase = () => {
     const registerUser = (email, password) => {
         setIsLoading(true)
         createUserWithEmailAndPassword(auth, email, password)
-            .then((userCredential) => {
+            .then((result) => {
+                console.log(result.user.email);
+                hanldeUserInfoRegister(result.user.email)
                 // Signed in 
                 setAuthError('')
-                const user = userCredential.user;
-                // ...
             })
             .catch((error) => {
-                const errorCode = error.code;
                 setAuthError(error.message);
-                // ..
             })
             .finally(() => setIsLoading(false))
     }
+
+
+    
+
+    //user info
+    const hanldeUserInfoRegister = (email) => {
+        fetch("https://shielded-tundra-20828.herokuapp.com/addUserInfo", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify({ email }),
+        })
+            .then((res) => res.json())
+            .then((result) => console.log(result));
+    };
+
+
+
 
     const logOut = () => {
         setIsLoading(true)
