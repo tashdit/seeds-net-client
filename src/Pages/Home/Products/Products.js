@@ -8,7 +8,7 @@ const Products = () => {
 
     //http://localhost:5000/seeds
     useEffect(() => {
-        fetch(`http://localhost:5000/seeds`)
+        fetch(`https://shielded-tundra-20828.herokuapp.com/seeds`)
             .then(res => res.json())
             .then(data => setSeeds(data))
     }, [])

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Navigation from '../../Shared/Navigation/Navigation';
 import { Grid, Container, TextField, Button, Typography, CircularProgress, Alert } from '@mui/material';
-import { NavLink, useHistory } from 'react-router-dom';
+import { NavLink, } from 'react-router-dom';
 import useAuth from '../../../hooks/useAuth';
 
 const Register = () => {

@@ -10,7 +10,7 @@ const MyOrders = () => {
 
     //Get orders
     useEffect(() => {
-        fetch(`http://localhost:5000/myOrder/${user.email}`)
+        fetch(`https://shielded-tundra-20828.herokuapp.com/myOrder/${user.email}`)
             .then((res) => res.json())
             .then((data) => setMyOrdes(data));
     }, [user?.email, control]);
@@ -19,7 +19,7 @@ const MyOrders = () => {
 
     //Delete Order
     const handleDelete = (id) => {
-        fetch(`http://localhost:5000/delteOrder/${id}`, {
+        fetch(`https://shielded-tundra-20828.herokuapp.com/delteOrder/${id}`, {
             method: "DELETE",
         })
             .then((res) => res.json())

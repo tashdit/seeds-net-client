@@ -20,7 +20,7 @@ const Booking = () => {
     const handleOrderSubmit = (data) => {
         data.email = user.email;
         data.status = "pending";
-        fetch("http://localhost:5000/addOrders", {
+        fetch("https://shielded-tundra-20828.herokuapp.com/addOrders", {
             method: "POST",
             headers: { "content-type": "application/json" },
             body: JSON.stringify(data),
@@ -31,7 +31,7 @@ const Booking = () => {
     }
 
     useEffect(() => {
-        fetch(`http://localhost:5000/singleProducts/${bookingId}`)
+        fetch(`https://shielded-tundra-20828.herokuapp.com/singleProducts/${bookingId}`)
             .then(res => res.json())
             .then(data => setBooking(data))
     }, [])

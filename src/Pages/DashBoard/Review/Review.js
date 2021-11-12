@@ -7,6 +7,15 @@ const Review = () => {
 
     const onSubmit = (data) => {
         console.log(data);
+        fetch("https://shielded-tundra-20828.herokuapp.com/addSReview", {
+            method: "POST",
+            headers: { "content-type": "application/json" },
+            body: JSON.stringify(data),
+        })
+            .then((res) => res.json())
+            .then((result) => console.log(result));
+
+        console.log(data);
     };
     return (
         <div>

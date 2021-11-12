@@ -12,6 +12,7 @@ import AuthProvider from './context/AuthProvider/AuthProvider';
 import PrivateRoute from './Pages/Login/PrivateRoute/PrivateRoute';
 import Booking from './Pages/Home/Booking/Booking';
 import DashBorad from './Pages/DashBoard/DashBorad';
+import Admin from './Pages/Admin/Admin';
 
 
 function App() {
@@ -36,6 +37,9 @@ function App() {
           </Route>
           <Route path="/dashBoard">
             <DashBorad></DashBorad>
+          </Route>
+          <Route path="/admin">
+            <Admin></Admin>
           </Route>
           <Route path="/login">
             <Login></Login>
