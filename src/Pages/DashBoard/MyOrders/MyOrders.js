@@ -26,12 +26,12 @@ const MyOrders = () => {
             .then((data) => {
                 if (data.deletedCount) {
                     setControl(!control);
+                    alert('are you sure ')
                 }
             });
-        console.log(id);
+
     }
 
-    console.log(myOrders);
     return (
         <div>
 
