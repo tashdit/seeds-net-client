@@ -11,9 +11,9 @@ const Product = ({ seed }) => {
                     <div className="portfolio-info">
                         <h4><span>Name:</span> {name}</h4>
                         <h4><span>Price</span> {price}</h4>
-                        <p><span>Details</span> {descrition}</p>
+                        <p><span style={{ color: '#009970', fontWeight: 'bold' }}>Details</span> {descrition}</p>
                         <Link to={`/booking/${_id}`}>
-                            <button>Purchess Now</button>
+                            <button style={{ color: '#fff', fontWeight: 'bold' }}>Purchess Now</button>
                         </Link>
                     </div>
                 </div>

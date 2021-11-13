@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import "./Review.css"
+import Rating from "react-rating"
 const Review = () => {
 
     const [review, setReview] = useState([])
@@ -17,7 +18,12 @@ const Review = () => {
                     <h2>Customer Review</h2>
                 </div>
                 <div className="review-text">
-                    {review.map(item => <p key={item?._id} >{item.comments}</p>)}
+                    {review.map(item => <p key={item?._id} >{item.comments} <br />
+                        <Rating initialRating={item.rating} emptySymbol="far fa-star icon-color"
+                            fullSymbol="fas fa-star icon-color"
+                            readonly
+                        > </Rating>
+                    </p>)}
                 </div>
             </div>
         </>

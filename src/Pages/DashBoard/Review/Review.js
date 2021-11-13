@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from "react-hook-form";
 import useAuth from '../../../hooks/useAuth';
+import "./Review.css"
 const Review = () => {
     const { register, handleSubmit, } = useForm();
     const { user } = useAuth()
@@ -20,10 +21,11 @@ const Review = () => {
     return (
         <div>
             <h1>Review</h1>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form className="review-from" onSubmit={handleSubmit(onSubmit)}>
                 <input
                     className="input-field"
                     name="email"
+
                     value={user?.email}
                     type="email"
                     {...register("email", { required: true })}
@@ -34,6 +36,12 @@ const Review = () => {
                     name="comments"
                     placeholder="Comments"
                     {...register("comments", { required: true })}
+                /> <br />
+                <input
+                    className="input-field"
+                    name="number"
+                    placeholder="Rating 1 to 5"
+                    {...register("rating", { required: true })}
                 />
                 <br />
 
@@ -41,6 +49,7 @@ const Review = () => {
                     className="submit-btn mt-3"
                     type="submit"
                     value="Submit"
+                    style={{ background: '#009970' }}
                 />
             </form>
         </div>

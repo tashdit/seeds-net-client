@@ -12,7 +12,8 @@ const MakeAdmin = () => {
 
     const handleAdminSubmit = (e) => {
         const user = { email }
-        fetch(`http://localhost:5000/users/admin`, {
+        fetch(`https://shielded-tundra-20828.herokuapp.com/users/admin`, {
+            mode: 'no-cors',
             method: 'PUT',
             headers: {
                 'content-type': 'application/json'
@@ -35,7 +36,6 @@ const MakeAdmin = () => {
                     sx={{ width: '50%' }}
                     type="email"
                     onBlur={handleOnBlur}
-                    id="standard-basic"
                     label="Email"
                     variant="standard" />
                 <Button variant="contained" type="submit">Make An Admin</Button>

@@ -8,11 +8,11 @@ const ExplorProduct = ({ products }) => {
             <div className="product-wrap">
                 <img src={picture} className="img-fluid" alt="" />
                 <div className="portfolio-info">
-                    <h4><span>Name:</span> {name}</h4>
-                    <h4><span>Price</span> {price}</h4>
-                    <p><span>Details</span> {descrition}</p>
+                    <h5><span>Name:</span> {name}</h5>
+                    <h5><span>Price</span> {price}</h5>
+                    <p><span style={{ color: '#009970', fontWeight: 'bold' }}>Details</span> {descrition}</p>
                     <Link to={`/booking/${_id}`}>
-                        <button>Purchess Now</button>
+                        <button style={{ color: '#fff', fontWeight: 'bold' }}>Purchess Now</button>
                     </Link>
                 </div>
             </div>

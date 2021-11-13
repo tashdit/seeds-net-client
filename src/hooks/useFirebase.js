@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import {
     getAuth, createUserWithEmailAndPassword, signOut, onAuthStateChanged,
-    signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, updateProfile, getIdToken
+    signInWithEmailAndPassword, GoogleAuthProvider,
 } from "firebase/auth";
 import initializeFirebase from '../Pages/Login/Login/Firebase/firebase-init';
 
@@ -61,12 +61,11 @@ const useFirebase = () => {
 
 
     //is admin
-
-    useEffect(() => {
-        fetch(`https://shielded-tundra-20828.herokuapp.com/users/${user.email}`)
-            .then(res => res.json())
-            .then(data => setAdmin(data.admin))
-    }, [user.email])
+    // useEffect(() => {
+    //     fetch(`https://shielded-tundra-20828.herokuapp.com/users/${user.email}`)
+    //         .then(res => res.json())
+    //         .then(data => setAdmin(data.admin))
+    // }, [user.email])
 
     const loginUser = (email, password, location, history) => {
         setIsLoading(true)
