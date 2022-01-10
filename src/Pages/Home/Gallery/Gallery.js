@@ -7,7 +7,7 @@ const Gallery = () => {
                 <div className="container">
 
                     <div className="section-title" >
-                        <h2>Gallery</h2>
+                        <h2>Best Selling Books</h2>
                         <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
                     </div>
 
@@ -16,55 +16,55 @@ const Gallery = () => {
                     <div className="row portfolio-container" >
                         <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                             <div className="portfolio-wrap">
-                                <img src={`https://www.usaid.gov/sites/default/files/styles/732_width/public/nodeimage/Bangladesh_Ag-RiceFarm.jpg`} className="img-fluid" alt="" />
+                                <img src={`https://i0.wp.com/vezendi.com/wp-content/uploads/2020/02/2020_02_20_AWAKE_COVER-orig_EBOOK-Best-seller-review-badge-bottom-ver.-bright-eps-640x1024.jpg?resize=498%2C796&ssl=1`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                             <div className="portfolio-wrap">
-                                <img src={`https://gbagrovetgroupbd.com/assets/backend/img/uploads/aboutUs/1698822163029628About.jpg`} className="img-fluid" alt="" />
+                                <img src={`https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781510766556/the-world-almanac-and-book-of-facts-2022-9781510766556_hr.jpg`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                             <div className="portfolio-wrap">
-                                <img src={`https://www.syngentafoundation.org/sites/g/files/zhg576/f/styles/syngenta_large/public/media/2020/06/30/smiling_farmer_1.jpeg?itok=tw8IuV8o`} className="img-fluid" alt="" />
+                                <img src={`https://m.media-amazon.com/images/I/51zcMqY7GQL.jpg`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                             <div className="portfolio-wrap">
-                                <img src={`https://www.lightcastlebd.com/wp-content/uploads/2020/06/Agro_Farmers.jpg`} className="img-fluid" alt="" />
+                                <img src={`https://jacobsmithdesign.files.wordpress.com/2014/12/perpetual-motivation.jpg?w=260&h=409`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                             <div className="portfolio-wrap">
-                                <img src={`https://www.unescap.org/sites/default/d8files/2020-05/processed.jpeg`} className="img-fluid" alt="" />
+                                <img src={`https://everydaypower.com/wp-content/uploads/2014/11/Screen-Shot-2015-06-21-at-12.37.01-PM.gif`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-app">
                             <div className="portfolio-wrap">
-                                <img src={`http://2.bp.blogspot.com/_nClLFOFAxw4/TDNPOqBGToI/AAAAAAAAAG4/x9OAlR_m3u4/s1600/31651_434766530914_171775155914_5998684_7776031_n.jpg`} className="img-fluid" alt="" />
+                                <img src={`https://m.media-amazon.com/images/I/613jyFtfH+L._SL500_.jpg`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                             <div className="portfolio-wrap">
-                                <img src={`https://www.povertyactionlab.org/sites/default/files/styles/large/public/2021-04/bangladesh_south-asia_agriculture_farmer-harvesting-rice.jpg?itok=3R1Uq9b-`} className="img-fluid" alt="" />
+                                <img src={`https://i.pinimg.com/736x/bd/22/5a/bd225ac134df6eeebf572febf6e6a31e.jpg`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-card">
                             <div className="portfolio-wrap">
-                                <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQBIOnYqzth7KCAhoC52uuUyL9HDF9scpUCkg&usqp=CAU`} className="img-fluid" alt="" />
+                                <img src={`https://cdnwp-s3.benzinga.com/wp-content/uploads/2019/05/16194652/Screenshot-2019-05-16-15.44.58-1.png`} className="img-fluid" alt="" />
                             </div>
                         </div>
 
                         <div className="col-lg-4 col-md-6 portfolio-item filter-web">
                             <div className="portfolio-wrap">
-                                <img src={`https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpxCnW30vofJPt9-ER-Sne7fj0eskZathOkQ&usqp=CAU`} className="img-fluid" alt="" />
+                                <img src={`https://i.harperapps.com/covers/9780062803375/x300.jpg`} className="img-fluid" alt="" />
                             </div>
                         </div>
 

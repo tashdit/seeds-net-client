@@ -11,7 +11,7 @@ const Navigation = () => {
         <div>
             <Navbar sticky="top" className="header" collapseOnSelect expand="lg">
                 <Container>
-                    <Navbar.Brand href="#home" className="logo"> <h1><a href="/">Seeds Net</a></h1> </Navbar.Brand>
+                    <Navbar.Brand href="#home" className="logo"> <h1><a href="/">MMH Books</a></h1> </Navbar.Brand>
                     <Navbar.Toggle style={{ background: "#fff" }} />
                     <Navbar.Collapse className="justify-content-end">
                         <Nav.Link as={Link} to="/" className="nav-link">Home</Nav.Link>
